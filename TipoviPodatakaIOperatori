@@ -1,0 +1,37 @@
+private static void Main(string[] args)
+{
+    Console.WriteLine("Dobro dosli u C#!");
+
+    /*
+    //Integrt (Celi brojevi)
+    int broj = 22;
+    //Float (Decimalni brojevi)
+    float decimalniBroj = 2.5f;
+    //String (Tekstulani tip)
+    string ime = "Milan";
+    //Boolean (Logicki tip podatka koji ima dve vrednosti true/false)
+    bool aktivan = true;
+
+    // Napravite promenljive tako da napisete ime, prezime, brojGodina, prosekOcena.
+    // camelCase  ->  brojGodina
+    // canonCase  ->  broj_godina
+    string moje_ime = "Milan";
+    string prezime = "Stojanovic";
+    int broj_godina = 16;
+    float prosekOcena = 2.3f;
+    */
+
+    //string unos = Console.ReadLine();
+    //Console.WriteLine(unos);
+    //int broj = int.Parse(unos);
+
+    //Operatori programskog jezika se dele u tri grupe i to:
+    //Aritmeticki operatori: +,-,*,/,%
+    //Operatori dodele: =, +=, -=, *=, /=
+    //Logički operatori: &&, ||, !
+
+    int zbir = 2 + 3;
+    Console.WriteLine(zbir);
+    int razlika = 5 - 2;
+    Console.WriteLine(razlika);
+}
