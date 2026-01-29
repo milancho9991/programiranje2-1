@@ -1,0 +1,32 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+        /*
+        int brojGodina = 19;
+        if (brojGodina >= 18) {
+            Console.WriteLine("Ucenik je punoletan!");
+        } else {
+            Console.WriteLine("Ucenike nije punoletan!");
+        }
+        */
+
+        float prosecnaOcena = 3.8f;
+
+        if (prosecnaOcena >= 1.5 && prosecnaOcena < 2.5) {
+            Console.WriteLine("Ucenik ima dovoljan uspeh");
+        }
+        if (prosecnaOcena >= 2.5 && prosecnaOcena < 3.5) {
+            Console.WriteLine("Ucenik ima dobar uspeh");
+        }
+        if (prosecnaOcena >= 3.5 && prosecnaOcena < 4.5)
+        {
+            Console.WriteLine("Ucenik ima vrlo dobar uspeh");
+        }
+        if (prosecnaOcena >= 4.5)
+        {
+            Console.WriteLine("Ucenik ima odlican uspeh");
+        }
+    }
+}
