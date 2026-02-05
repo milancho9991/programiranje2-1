@@ -28,5 +28,23 @@ internal class Program
         {
             Console.WriteLine("Ucenik ima odlican uspeh");
         }
+
+                //broj % 2 = 0
+        int broj = 3;
+        if (broj == 0)
+        {
+            Console.WriteLine("Broj je jednak nuli!");
+        }
+        else if (broj % 2 != 0)
+        {
+            Console.WriteLine("Broj je neparan!");
+        }
+        else if (broj % 2 == 0)
+        {
+            Console.WriteLine("Broj je paran!");
+        }
+        else {
+            Console.WriteLine("Unesite ceo broj");
+        }
     }
 }
