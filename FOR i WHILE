@@ -1,0 +1,215 @@
+1. PETLJE U PROGRAMIRANJU
+Petlje služe za ponavljanje određenog dela koda više puta.
+Umesto da više puta pišemo iste naredbe:
+Console.WriteLine(1);
+Console.WriteLine(2);
+Console.WriteLine(3);
+koristimo petlje:
+for (int i = 1; i <= 3; i++)
+{
+   Console.WriteLine(i);
+}
+
+2. FOR PETLJA
+Kada koristimo for petlju?
+For petlju koristimo kada znamo koliko puta treba da se izvrši ponavljanje.
+
+Sintaksa for petlje
+for (inicijalizacija; uslov; promena)
+{
+   naredbe;
+}
+
+Delovi for petlje
+Deo
+Opis
+inicijalizacija
+početna vrednost promenljive
+uslov
+određuje koliko dugo traje petlja
+promena
+povećava ili smanjuje promenljivu
+
+
+Kako funkcioniše for petlja?
+for (int i = 1; i <= 5; i++)
+{
+   Console.WriteLine(i);
+}
+Redosled izvršavanja
+1. Inicijalizacija
+Izvršava se samo jednom:
+int i = 1;
+
+2. Provera uslova
+Proverava se:
+i <= 5
+Ako je uslov tačan → izvršava se kod u petlji.
+
+3. Izvršavanje koda
+Console.WriteLine(i);
+
+4. Promena promenljive
+i++
+
+5. Ponovna provera uslova
+Petlja nastavlja rad dok je uslov tačan.
+
+Primer 1 – Brojevi od 1 do 10
+for (int i = 1; i <= 10; i++)
+{
+   Console.WriteLine(i);
+}
+
+Primer 2 – Parni brojevi
+for (int i = 2; i <= 20; i += 2)
+{
+   Console.WriteLine(i);
+}
+
+Primer 3 – Odbrojavanje
+for (int i = 10; i >= 1; i--)
+{
+   Console.WriteLine(i);
+}
+
+3. WHILE PETLJA
+Kada koristimo while petlju?
+While petlju koristimo kada ne znamo unapred koliko puta će se izvršiti ponavljanje.
+Petlja radi dok je uslov tačan.
+
+Sintaksa while petlje
+while (uslov)
+{
+   naredbe;
+}
+
+Kako funkcioniše while petlja?
+int i = 1;
+
+while (i <= 5)
+{
+   Console.WriteLine(i);
+   i++;
+}
+
+Redosled izvršavanja
+1. Provera uslova
+i <= 5
+Ako je uslov tačan → izvršava se telo petlje.
+
+2. Izvršavanje koda
+Console.WriteLine(i);
+
+3. Promena promenljive
+i++;
+
+4. Ponovna provera uslova
+Petlja se izvršava dok je uslov tačan.
+
+Važna razlika u funkcionisanju
+FOR
+WHILE
+inicijalizacija, uslov i promena su u jednoj liniji
+inicijalizacija i promena se pišu odvojeno
+koristi se kada znamo broj ponavljanja
+koristi se kada broj ponavljanja nije poznat
+promena brojača se uglavnom automatski vidi u zaglavlju petlje
+programer mora ručno da menja promenljivu
+preglednija za brojanja
+pogodna za unos i uslove
+
+
+Najvažnija razlika u izvršavanju
+FOR petlja
+for (int i = 1; i <= 5; i++)
+prvo se izvršava inicijalizacija
+zatim se proverava uslov
+izvršava se kod
+menja se brojač
+ponovo proverava uslov
+
+WHILE petlja
+while (i <= 5)
+odmah proverava uslov
+izvršava kod ako je uslov tačan
+promena promenljive mora ručno da se uradi
+
+Primer 1 – Brojevi od 1 do 10
+int i = 1;
+
+while (i <= 10)
+{
+   Console.WriteLine(i);
+   i++;
+}
+
+Primer 2 – Unos dok se ne unese 0
+int broj = 1;
+
+while (broj != 0)
+{
+   Console.Write("Unesi broj: ");
+   broj = int.Parse(Console.ReadLine());
+}
+
+Primer 3 – Sabiranje brojeva
+int zbir = 0;
+int broj = 1;
+
+while (broj != 0)
+{
+   Console.Write("Unesi broj: ");
+   broj = int.Parse(Console.ReadLine());
+
+   zbir += broj;
+}
+
+Console.WriteLine("Zbir je: " + zbir);
+
+4. BESKONAČNA PETLJA
+Ako se uslov nikada ne promeni → program ulazi u beskonačnu petlju.
+Primer greške
+int i = 1;
+
+while (i <= 5)
+{
+   Console.WriteLine(i);
+}
+⚠ Nedostaje:
+i++;
+
+5. Zadaci za vežbu
+Zadatak 1
+Ispisati brojeve od 1 do 20 pomoću for petlje.
+
+Zadatak 2
+Ispisati neparne brojeve od 1 do 15 pomoću for petlje.
+
+Zadatak 3
+Ispisati brojeve od 10 do 1 pomoću while petlje.
+
+Zadatak 4
+Računati zbir brojeva od 1 do 100 pomoću for petlje.
+
+Zadatak 5
+Tražiti unos brojeva sve dok korisnik ne unese 0.
+
+6. Dodatni zadaci
+Zadatak 6
+Izračunati faktorijel broja.
+Primer:
+5! = 5 * 4 * 3 * 2 * 1
+
+Zadatak 7
+Prebrojati koliko je korisnik uneo pozitivnih brojeva.
+
+7. Najvažnije za pamćenje
+✅ Petlje služe za ponavljanje koda
+ ✅ For koristimo kada znamo broj ponavljanja
+ ✅ While koristimo kada ne znamo broj ponavljanja
+ ✅ Uslov mora nekada postati netačan
+ ✅ Paziti na beskonačne petlje
+ ✅ For petlja prvo izvrsi kod pa prover uslov, dok while prvo proveri uslov pa izvrsi kod
+ ✅ Kod while petlje programer mora ručno menjati promenljivu koja kontroliše uslov
+
