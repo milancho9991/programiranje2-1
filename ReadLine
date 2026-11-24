@@ -1,0 +1,21 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+
+        string ime;
+        Console.WriteLine("Unesi ime: ");
+        ime = Console.ReadLine();
+
+        Console.WriteLine(ime);
+
+        int broj;
+        Console.WriteLine("Unesite broj godina");
+        broj = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine(broj);
+
+
+    }
+}
